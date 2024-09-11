@@ -1,0 +1,10 @@
+DROP SCHEMA IF EXISTS cringe CASCADE;
+CREATE SCHEMA cringe;
+
+SET search_path TO cringe;
+
+CREATE TABLE Person (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    pts INT DEFAULT 0
+);

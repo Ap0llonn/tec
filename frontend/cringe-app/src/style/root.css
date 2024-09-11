@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    font-family: Inter, system-ui, Arial, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    --title-font: "Raleway", sans-serif;
+
+    --white: #fff;
+    --black: #000;
+
+    --bg-color: #222;
+    --text-color: #fff;
+    --card-bg-color: #222;
+    --card-text-color: #fff;
+    --card-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+
+    --blue-accent: #07214D;
+    --cyan-accent: #00bbff;
+    --normalize-color: #290754;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,::before, ::after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+html, body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: Raleway, sans-serif;
+    overflow: auto;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* Ã‰viter des overflow de texte */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: none;
+}
